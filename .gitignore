@@ -1,0 +1,65 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.*
+!.env.example        # .env.example коммитим — это шаблон без секретов
+
+# ========================
+# IDE
+# ========================
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# ========================
+# Docker
+# ========================
+# Данные БД (если монтируешь локально)
+postgres-data/
+*-db-data/
+
+# ========================
+# Alembic
+# ========================
+# Версии миграций коммитим, но кэш не нужен
+alembic/versions/__pycache__/
+
+# ========================
+# Тесты
+# ========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ========================
+# OS
+# ========================
+# Windows
+Thumbs.db
+desktop.ini
+
+# macOS
+.DS_Store
